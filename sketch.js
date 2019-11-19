@@ -102,7 +102,7 @@ function drawNeighbourhood(seeds,seedsAmount,color,weight){
     //para cada seed, desenhar os seus vizinhos exclusivos (que não são mais vizinhos de nenhum outro seed) [os seeds que são multivizinhos são os formadores das linhas de divisão do diagrama]
     for(let s=0; s<seedsAmount; s++){
         for(let p=0; p<seeds[s].neighbours.length; p++){
-            if(seeds[s].neighbours[p].hasMultipleCenters == false){	//seeds[s].neighbours[p].hasMultipleCenters == false 
+            if(true){	//seeds[s].neighbours[p].hasMultipleCenters == false 
                 stroke(color[s%(color.length)]);
                 strokeWeight(weight);
                 point(seeds[s].neighbours[p].x, seeds[s].neighbours[p].y);
